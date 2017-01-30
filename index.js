@@ -10,9 +10,9 @@ var Habitat = require(`habitat`);
 Habitat.load();
 
 var config = {
-  "dest": argv.dest || `dist`,
-  "src": argv.src || `locales`,
-  "locales": argv.locales || process.env.SUPPORTED_LOCALES || `*`;
+  dest: argv.dest || `dist`,
+  src: argv.src || `locales`,
+  locales: argv.locales || process.env.SUPPORTED_LOCALES || `*`
 };
 
 function getListLocales() {
