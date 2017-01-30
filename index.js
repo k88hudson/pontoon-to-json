@@ -6,6 +6,7 @@ var FS = require(`q-io/fs`);
 var argv = require(`minimist`)(process.argv.slice(2));
 
 var Habitat = require(`habitat`);
+
 Habitat.load();
 
 var config = {
@@ -36,7 +37,7 @@ function getListLocales() {
         reject(e);
       });
     } else {
-      resolve(config.locales.split(",").map(item => item.trim()));
+      resolve(config.locales.split(`,`).map(item => item.trim()));
     }
   });
 }
