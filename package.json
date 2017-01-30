@@ -10,7 +10,7 @@
     "pontoon-to-json": "index.js"
   },
   "scripts": {
-    "test": "eslint --config ./.eslintrc.yaml '*.js'"
+    "test": "eslint --config ./.eslintrc.yaml '*.js' && mocha -R spec"
   },
   "keywords": [
     "Pontoon",
@@ -26,7 +26,12 @@
     "q-io": "^1.13.2"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.3.1",
-    "mofo-style": "^2.4.0"
+    "mocha": "^3.2.0",
+    "mock-cli": "^0.1.2",
+    "mock-require": "^2.0.1",
+    "mofo-style": "^2.4.0",
+    "sinon": "^1.17.7"
   }
 }
